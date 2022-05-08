@@ -1,10 +1,15 @@
 # Linux
 
-## Aplicaciones
+* [Aplicaciones](#aplicaciones)
+* [Utilidades para mejorar la terminal](#terminal)
+* [Ejercicios / manuales / etc...](#ejercicios)
+
+
+## <a name="aplicaciones">Aplicaciones</a>
 * [Terminal Kitty](https://sw.kovidgoyal.net/kitty/) Terminal muy liviana basada en GPU
 * [Zeal](https://zealdocs.org/) Gestor de documentación para tener multitud de documentación oficial en offline
 
-## Utilidades para mejorar la terminal
+## <a name="terminal">Utilidades para mejorar la terminal<a/>
 
 ### BAT [(Github)](https://github.com/sharkdp/bat)
 El bat es un cat vitaminizado, el cual formatea la salida en un formato mucho más amigable, tiene detección de sintaxis y algunas cosillas más.
@@ -19,3 +24,6 @@ Después de la instalación para ejecutarlo hay que utilizar el comando **batcat
 ```
 alias cat='batcat'
 ```
+  
+## <a name="ejercicios">Ejercicios / manuales / etc...</a>
+* [Overthewire](https://overthewire.org/wargames/) Página para aprender conceptos de seguridad, manejarse con la terminal, etc.. a través de multitud de ejercicios y juegos
