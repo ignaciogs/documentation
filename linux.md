@@ -1,5 +1,9 @@
 # Linux
 
+## Aplicaciones
+* [Terminal Kitty](https://sw.kovidgoyal.net/kitty/) Terminal muy liviana basada en GPU
+* [Zeal](https://zealdocs.org/) Gestor de documentación para tener multitud de documentación oficial en offline
+
 ## Utilidades para mejorar la terminal
 
 ### BAT [(Github)](https://github.com/sharkdp/bat)
