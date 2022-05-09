@@ -38,3 +38,14 @@ keytool -exportcert -list -v \ -alias <your-key-name> -keystore <path-to-product
 @Versión debug usando el fichero de firma por defecto
 keytool -exportcert -list -v -alias androiddebugkey -keystore ~/.android/debug.keystore
 ```
+<br/><br/>
+Consultar las alarmas que estan activas en un dispositivo
+```console
+adb shell dumpsys alarm
+```
+
+<br/><br/>
+Probar una aplicación con Monkey
+```console
+adb shell monkey -p com.mypackagename --throttle 500 -v 10000
+```
