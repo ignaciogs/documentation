@@ -4,6 +4,7 @@
 * [Utilidades para mejorar la terminal](#terminal)
   * [BAT](#bat)
   * [LSD](#lsd)
+* [Shell (comandos útiles)](#shell) 
 * [Ejercicios / manuales / etc...](#ejercicios)
 
 
@@ -50,6 +51,19 @@ Para utilizarlo de forma más simple sería bueno como dice en su pagina crear l
  alias lla='ls -la'
  alias lt='ls --tree'
  ```
+ 
+## <a name="shell">Shell (comandos útiles)</a> 
+ 
+### Búsqueda de palabras en ficheros
+```console
+grep --include=*.java -irn ~/workspace/ -e "cadena" 
+``` 
+Entre otros existen estos parámetros interesantes
+* -i case insesitive
+* -r is recursive
+* -n is line number
+* -w stands match the whole word
+ 
   
 ## <a name="ejercicios">Ejercicios / manuales / etc...</a>
 * [Overthewire](https://overthewire.org/wargames/) Página para aprender conceptos de seguridad, manejarse con la terminal, etc.. a través de multitud de ejercicios y juegos
