@@ -27,7 +27,7 @@
 >#Una vez instalado tenemos que crear un fichero de configuración llamado sxhkdrc dentro de .congif/sxhkdrc
 >cd ~/.config
 >mkdir sxhkd
-> Creamos un fichero sxhkdrc o nos descargamos el [nuestro propio con la configuración]()
+> Creamos un fichero sxhkdrc o nos descargamos el [nuestro propio con la configuración](sxhkdrc)
 >```
 
 
