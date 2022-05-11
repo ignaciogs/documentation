@@ -2,6 +2,7 @@
 # Android
 
 * [ADB](#adb)
+* [Plugins Android Studio](#plugins)
 
 ## <a name="adb">ADB</a>
 
@@ -49,3 +50,10 @@ Probar una aplicación con Monkey
 ```console
 adb shell monkey -p com.mypackagename --throttle 500 -v 10000
 ```
+
+## <a name="plugins">Plugins Android Studio</a>
+* [JSON To Kotlin Class](https://plugins.jetbrains.com/plugin/9960-json-to-kotlin-class-jsontokotlinclass-) Convierte un JSON en POJO
+* [ADB Idea](https://plugins.jetbrains.com/plugin/7380-adb-idea) Accesos rápidos para resetear, limpiar datos, debuguear, etc..
+* [Rainbow Brackets](https://plugins.jetbrains.com/plugin/10080-rainbow-brackets) Colorea para su fácil identificación caracteres como "{", "\[", "(", etc...
+* [CodeTogether](https://plugins.jetbrains.com/plugin/14225-codetogether) Permite hacer pair programing con dos o más personas
+* [Key Promoter X](https://plugins.jetbrains.com/plugin/9792-key-promoter-x) Mustra una alerta con el atajo de teclado correspondiente a la acción que se ha realizado con el ratón, para ir aprendiendo los atajos
