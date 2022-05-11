@@ -29,7 +29,7 @@
 >mkdir sxhkd
 > Creamos un fichero sxhkdrc o nos descargamos el nuestro
 >```
-> [Nuestro propio con la configuración sxhkdrc](sxhkdrc)
+> [Fichero sxhkdrc](sxhkdrc)
 
 
 ## <a name="terminal">Utilidades para mejorar la terminal<a/>
