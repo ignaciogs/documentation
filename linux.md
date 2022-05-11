@@ -24,7 +24,7 @@
 >sudo apt install libxcb-util0-dev
 >sudo apt install libxcb-keysyms1-dev
 >
->#Una vez instalado tenemos que crear un fichero de configuración llamado sxhkdrc dentro de .congif/sxhkdrc
+>#Una vez instalado tenemos que crear un fichero de configuración llamado sxhkdrc dentro de .congif/sxhkd/sxhkdrc
 >cd ~/.config
 >mkdir sxhkd
 > Creamos un fichero sxhkdrc o nos descargamos el nuestro
