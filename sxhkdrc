@@ -1,0 +1,7 @@
+ # Reload functions
+ super + Escape
+      "$XDG_CONFIG_HOME"/sxhkd/functions
+  
+ # Open Browser
+ super + shift + f
+      firefox
