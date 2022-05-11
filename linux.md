@@ -27,8 +27,9 @@
 >#Una vez instalado tenemos que crear un fichero de configuración llamado sxhkdrc dentro de .congif/sxhkdrc
 >cd ~/.config
 >mkdir sxhkd
-> Creamos un fichero sxhkdrc o nos descargamos el [nuestro propio con la configuración](sxhkdrc)
+> Creamos un fichero sxhkdrc o nos descargamos el nuestro
 >```
+> [Nuestro propio con la configuración sxhkdrc](sxhkdrc)
 
 
 ## <a name="terminal">Utilidades para mejorar la terminal<a/>
