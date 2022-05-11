@@ -9,8 +9,27 @@
 
 
 ## <a name="aplicaciones">Aplicaciones</a>
-* [Terminal Kitty](https://sw.kovidgoyal.net/kitty/) Terminal muy liviana basada en GPU
-* [Zeal](https://zealdocs.org/) Gestor de documentación para tener multitud de documentación oficial en offline
+> [Terminal Kitty](https://sw.kovidgoyal.net/kitty/) Terminal muy liviana basada en GPU
+
+> [Zeal](https://zealdocs.org/) Gestor de documentación para tener multitud de documentación oficial en offline
+
+> [sxhkd](https://github.com/baskerville/sxhkd) Demonio para manejat atajos de teclado y facilmente configurable mediante fichero
+>```console
+>git clone https://github.com/baskerville/sxhkd.git
+>make
+>sudo make install
+>
+>#Si falla el make será muy posible que se tenga que instalar los siguientes paquetes
+>sudo apt install apt-file
+>sudo apt install libxcb-util0-dev
+>sudo apt install libxcb-keysyms1-dev
+>
+>#Una vez instalado tenemos que crear un fichero de configuración llamado sxhkdrc dentro de .congif/sxhkdrc
+>cd ~/.config
+>mkdir sxhkd
+> Creamos un fichero sxhkdrc o nos descargamos el [nuestro propio con la configuración]()
+>```
+
 
 ## <a name="terminal">Utilidades para mejorar la terminal<a/>
 
