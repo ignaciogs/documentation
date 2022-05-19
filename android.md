@@ -56,12 +56,12 @@ adb shell monkey -p com.mypackagename --throttle 500 -v 10000
 
 ## <a name="regex">Expresiones regulares</a>
 Expresiones regulares interesantes para buscar en el AS
-| Caracter | Descipción |
+| Expresión | Descipción |
 |----------|------------|
 | . | Cualquier caracter |
 | * | Repite indefinidamente el caracter que tiene antes |
 
 Ejemplos útiles
-| Caracter | Significado |
+| Expresión | Significado |
 |----------|------------|
 | sc.*en | Devolverá todos los textos que empiecen por "sc" y terminen por "en", como po ejemplo "screen" |
