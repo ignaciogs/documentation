@@ -3,6 +3,7 @@
 
 * [ADB](#adb)
 * [Plugins Android Studio](#plugins)
+* [Expresiones regulares](#regex)
 
 ## <a name="adb">ADB</a>
 
@@ -52,3 +53,15 @@ adb shell monkey -p com.mypackagename --throttle 500 -v 10000
 * [Rainbow Brackets](https://plugins.jetbrains.com/plugin/10080-rainbow-brackets) Colorea para su fácil identificación caracteres como "{", "\[", "(", etc...
 * [CodeTogether](https://plugins.jetbrains.com/plugin/14225-codetogether) Permite hacer pair programing con dos o más personas
 * [Key Promoter X](https://plugins.jetbrains.com/plugin/9792-key-promoter-x) Mustra una alerta con el atajo de teclado correspondiente a la acción que se ha realizado con el ratón, para ir aprendiendo los atajos
+
+## <a name="regex">Expresiones regulares</a>
+Expresiones regulares interesantes para buscar en el AS
+| Caracter | Descipción |
+|----------|------------|
+| . | Cualquier caracter |
+| * | Repite indefinidamente el caracter que tiene antes |
+
+Ejemplos útiles
+| Caracter | Significado |
+|----------|------------|
+| sc.*en | Devolverá todos los textos que empiecen por "sc" y terminen por "en", como po ejemplo "screen" |
