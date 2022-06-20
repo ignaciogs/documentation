@@ -4,6 +4,9 @@
 * [ADB](#adb)
 * [Plugins Android Studio](#plugins)
 * [Expresiones regulares](#regex)
+* [Gradle](#gradle
+* 
+* )
 
 ## <a name="adb">ADB</a>
 
@@ -65,3 +68,10 @@ Ejemplos útiles
 | Expresión | Significado |
 |----------|------------|
 | sc.*en | Devolverá todos los textos que empiecen por "sc" y terminen por "en", como po ejemplo "screen" |
+
+## <a name="gradle">Gradle</a>
+
+###### Forzar un refresco de las librerías descargadas en la cache
+```console
+./gradlew build --refresh-dependencies
+```
