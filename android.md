@@ -4,9 +4,7 @@
 * [ADB](#adb)
 * [Plugins Android Studio](#plugins)
 * [Expresiones regulares](#regex)
-* [Gradle](#gradle
-* 
-* )
+* [Gradle](#gradle)
 
 ## <a name="adb">ADB</a>
 
