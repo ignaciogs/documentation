@@ -73,3 +73,8 @@ Ejemplos útiles
 ```console
 ./gradlew build --refresh-dependencies
 ```
+
+###### Ejecutar gradle sin que tenga en cuenta variables de la VMOptions que no entieda
+```console
+./gradlew build -Dorg.gradle.jvmargs=-XX:+IgnoreUnrecognizedVMOptions
+```
