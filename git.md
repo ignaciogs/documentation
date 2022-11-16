@@ -1,6 +1,6 @@
 # Git
 
-###### Activar que se fiormen todos los commits
+###### Activar que se firmen todos los commits
 ```console
 git config --global commit.gpgsign true
 ```
