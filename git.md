@@ -10,7 +10,7 @@ git config --global commit.gpgsign true
 git commit -S -m "YOUR_COMMIT_MESSAGE"
 ```
 
-###### Eliminar uun submodulo
+###### Eliminar un submodulo
 
 * Delete the relevant section from the .gitmodules file.
 * Stage the .gitmodules changes git add .gitmodules
