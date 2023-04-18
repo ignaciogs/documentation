@@ -54,6 +54,7 @@ adb shell monkey -p com.mypackagename --throttle 500 -v 10000
 * [Rainbow Brackets](https://plugins.jetbrains.com/plugin/10080-rainbow-brackets) Colorea para su fácil identificación caracteres como "{", "\[", "(", etc...
 * [CodeTogether](https://plugins.jetbrains.com/plugin/14225-codetogether) Permite hacer pair programing con dos o más personas
 * [Key Promoter X](https://plugins.jetbrains.com/plugin/9792-key-promoter-x) Mustra una alerta con el atajo de teclado correspondiente a la acción que se ha realizado con el ratón, para ir aprendiendo los atajos
+* [Junp to Line](https://plugins.jetbrains.com/plugin/14877-jump-to-line) Permite irte a la linea que desee graficamente mientras esta debugueando
 
 ## <a name="regex">Expresiones regulares</a>
 Expresiones regulares interesantes para buscar en el AS
