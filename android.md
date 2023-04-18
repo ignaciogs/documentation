@@ -3,6 +3,7 @@
 
 * [ADB](#adb)
 * [Plugins Android Studio](#plugins)
+* [OPtions Android Studio](#options)
 * [Expresiones regulares](#regex)
 * [Gradle](#gradle)
 
@@ -55,6 +56,9 @@ adb shell monkey -p com.mypackagename --throttle 500 -v 10000
 * [CodeTogether](https://plugins.jetbrains.com/plugin/14225-codetogether) Permite hacer pair programing con dos o más personas
 * [Key Promoter X](https://plugins.jetbrains.com/plugin/9792-key-promoter-x) Mustra una alerta con el atajo de teclado correspondiente a la acción que se ha realizado con el ratón, para ir aprendiendo los atajos
 * [Junp to Line](https://plugins.jetbrains.com/plugin/14877-jump-to-line) Permite irte a la linea que desee graficamente mientras esta debugueando
+
+## <a name="options">Options Android Studio</a>
+* Opción Settings/Editor/Font --> "Enable ligatures" Activa la visualización de algunos símbolos más gráficos como flechas, distinto, &&, etc...
 
 ## <a name="regex">Expresiones regulares</a>
 Expresiones regulares interesantes para buscar en el AS
