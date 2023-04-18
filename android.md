@@ -3,7 +3,7 @@
 
 * [ADB](#adb)
 * [Plugins Android Studio](#plugins)
-* [OPtions Android Studio](#options)
+* [Options Android Studio](#options)
 * [Expresiones regulares](#regex)
 * [Gradle](#gradle)
 
