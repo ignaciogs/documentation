@@ -1,16 +1,16 @@
 # Git
 
-#### Activar que se firmen todos los commits
+### Activar que se firmen todos los commits
 ```console
 git config --global commit.gpgsign true
 ```
 
-#### Firmar un commit determinado (-S)
+### Firmar un commit determinado (-S)
 ```console
 git commit -S -m "YOUR_COMMIT_MESSAGE"
 ```
 
-#### Migrar el directorio de un repositorio a otro (y otra ubicación) manteniendo el historial de cambios
+### Migrar el directorio de un repositorio a otro (y otra ubicación) manteniendo el historial de cambios
 1. Creamos un directorio llamado por ejemplo migration
 2. Dentro de migration creamos dos directorios uno llamado source y otro llamado target
 3. Dentro de source clonamos el repo que tiene todo y del que queremos extraer el diectorio
@@ -55,7 +55,7 @@ git merge develop --allow-unrelated-histories
 ```
 14.- Subimos la rama de la manera normal, hacemos PR y pa dentro.
 
-#### Eliminar un submodulo
+### Eliminar un submodulo
 
 * Delete the relevant section from the .gitmodules file.
 * Stage the .gitmodules changes git add .gitmodules
