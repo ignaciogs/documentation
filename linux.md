@@ -6,6 +6,7 @@
   * [LSD](#lsd)
 * [Shell (comandos útiles)](#shell) 
 * [Ejercicios / manuales / etc...](#ejercicios)
+* [Scripts interesantes](#scripts)
 
 
 ## <a name="aplicaciones">Aplicaciones</a>
@@ -96,3 +97,52 @@ Para utilizarlo de forma más simple sería bueno como dice en su pagina crear l
   
 ## <a name="ejercicios">Ejercicios / manuales / etc...</a>
 * [Overthewire](https://overthewire.org/wargames/) Página para aprender conceptos de seguridad, manejarse con la terminal, etc.. a través de multitud de ejercicios y juegos
+
+* ## <a name="scripts">Scripts interesantes</a>
+### Obtener una lista de PRs abiertos en github en un conjunto de repositorios
+ ```shell
+ #!/bin/bash
+
+TOKEN="your_token"
+REPOS=(
+    "owner/repository_name"
+    "owner/repository_name"
+    "owner/repository_name"
+)
+
+# Colors
+RED=$(tput setaf 1)
+GREEN=$(tput setaf 2)
+BLUE=$(tput setaf 4)
+RESET=$(tput sgr0)
+
+BACK_REPO="\033[48;2;255;255;255m"
+TEXT_REPO="\033[38;2;0;0;0m"
+RESET="\033[0m"
+
+for REPO in "${REPOS[@]}"; do
+    response=$(curl -s -H "Authorization: token $TOKEN" "https://api.github.com/repos/$REPO/pulls?state=open")
+
+    # Comprobar si hay PRs abiertos
+    pr_count=$(echo "$response" | jq 'length')
+    if [[ "$pr_count" -eq 0 ]]; then
+        continue
+    fi
+
+    # Calculate column widths
+    title_width=$(echo "$response" | jq -r '.[].title' | awk '{ if (length > max) max = length } END { print max }')
+    url_width=$(echo "$response" | jq -r '.[].url' | awk '{ if (length > max) max = length } END { print max }')
+    user_width=$(echo "$response" | jq -r '.[].user.login' | awk '{ if (length > max) max = length } END { print max }')
+    update_width=$(echo "$response" | jq -r '.[].updated_at' | awk '{ if (length > max) max = length } END { print max }')
+
+    echo -e "${TEXT_REPO}${BACK_REPO}Repository: $REPO${RESET}"
+    printf "${RED}%-${title_width}s ${GREEN}%-${url_width}s ${BLUE}%-${user_width}s ${BLUE}%-${update_width}s ${RESET}\n" "Titulo" "Url" "Usuario" "Fecha"
+
+    echo "$response" | jq -r '.[] | "\(.title)\t\(.url)\t\(.user.login)\t\(.updated_at)"' | while IFS=$'\t' read -r title url user updated; do
+        formatted_updated=$(echo "$updated" | awk -F '[-T:.Z]' '{ printf "%s-%s-%s %s:%s:%s\n", $1, $2, $3, $4, $5, $6 }')
+        printf "${RED}%-${title_width}s ${GREEN}%-${url_width}s ${BLUE}%-${user_width}s ${BLUE}%-${update_width}s ${RESET}\n" "$title" "$url" "$user" "$formatted_updated"
+    done
+
+    echo -e "\n"
+done 
+ ``` 
