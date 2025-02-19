@@ -98,7 +98,7 @@ Para utilizarlo de forma más simple sería bueno como dice en su pagina crear l
 ## <a name="ejercicios">Ejercicios / manuales / etc...</a>
 * [Overthewire](https://overthewire.org/wargames/) Página para aprender conceptos de seguridad, manejarse con la terminal, etc.. a través de multitud de ejercicios y juegos
 
-* ## <a name="scripts">Scripts interesantes</a>
+## <a name="scripts">Scripts interesantes</a>
 ### Obtener una lista de PRs abiertos en github en un conjunto de repositorios
  ```shell
  #!/bin/bash
